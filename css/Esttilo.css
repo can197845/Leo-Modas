@@ -1,0 +1,339 @@
+/*-- VARIABLES GENERALES DE COLOR --*/
+:root {
+    --colorHeader: purple;
+    --colorLetras: White;
+    --colorBodyBg: chocolate;
+}
+
+/* ____________________ ESTILO DEL HEADER_________________________*/
+
+.contenedorHeader {
+    height: 100px;
+    background-color: var(--colorHeader);
+    color: var(--colorLetras);
+    margin-bottom: 1px;
+
+}
+
+.estiloLogo {
+    text-align: center;
+    font-family: Gwendolyn;
+    font-size: 4rem;
+}
+
+
+.contenedorDivHeaderMenu {
+    position: relative;
+    top: -30px;
+    padding: 0px;
+}
+
+/* ________________________ ESTILOS DE LAS SECCIONES DEL MAIN ____________________*/
+
+.contenedorSeccion {
+    text-align: center;
+    padding: 5px;
+    border: 4px solid wheat;
+    background-color: rgba(255, 127, 80, 0.668);
+}
+
+/* _________________________ Contenedores de los articulos _______________________*/
+
+.contenedorArticulos {
+
+    margin-top: 1px;
+    height: 70vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.contenedor-producto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 420px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
+
+.contenedor-producto-img img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    padding: 3px;
+    border-radius: 25px;
+}
+
+.contenedor-producto-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.btnAgregar {
+    padding: 3px;
+    background-color: darkgoldenrod;
+    border-radius: 25px;
+}
+
+
+/*-- ESTILOS DE LAS ETIQUETAS --*/
+main div div a {
+    text-decoration: none;
+    color: var(--colorLetras);
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--colorLetras)
+}
+
+body {
+    background-color: var(--colorBodyBg);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 5px;
+}
+
+main div ul li {
+    display: inline;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* _____________________________________ FOOTER ____________________________________*/
+
+.contenedorFooter {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+.formatFace {
+    font-size: 2rem;
+    color: blue;
+
+}
+
+.formatWhats {
+    font-size: 2rem;
+    color: green;
+}
+
+.formatCart {
+    font-size: 2rem;
+    ;
+}
+
+/*____________________ ESTILO PARA LA PAGE registro.php ________________________________*/
+
+.contenedor-php {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-foto-perfil-php {
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black;
+
+}
+
+.contenedor-direccion-php {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black;
+
+}
+
+.foto-perfil-php {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.contenedor-input-php {
+    margin: 5px;
+    padding: 5px;
+}
+
+.contenedor-formulario-php {
+    padding: 10px;
+
+}
+
+.contenedor-identificatorio-php {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black;
+
+}
+
+.contenedor-adicional-php {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.btn-agregar-php {
+    padding: 5px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.btn-ingresar-php {
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+/*____________________ ESTILO PARA LA PAGE articulo.php ________________________________*/
+.contenedor-articulo-menu-php {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.articulo-btn-menu-php {
+    width: 200px;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+    background-color: rgb(122, 122, 238);
+    border: 3px solid rgba(0, 0, 255, 0.296);
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px blue;
+}
+
+.articulo-btn-menu-php:hover {
+    background-color: rgba(34, 34, 99, 0.621);
+}
+
+.articulo-btn-menu-php a {
+    font-size: larger;
+    text-decoration: none;
+    color: var(--colorLetras);
+}
+
+/*____________________ ESTILO PARA LA PAGE plataformaAdmin.php ________________________________*/
+.contenedor-plataformaAdmin-menu-php {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.plataformaAdmin-btn-menu-php {
+    width: 200px;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+    background-color: rgb(122, 122, 238);
+    border: 3px solid rgba(0, 0, 255, 0.296);
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px blue;
+}
+
+.plataformaAdmin-btn-menu-php:hover {
+    background-color: rgba(34, 34, 99, 0.621);
+}
+
+.plataformaAdmin-btn-menu-php a {
+    font-size: larger;
+    text-decoration: none;
+    color: var(--colorLetras);
+}
+
+/*____________________ MEDIA QUERI ________________________________*/
+
+@media screen and (max-width: 982px) {
+
+    /*____________________ AJUSTE DEL HEADER  index.html________________________________*/
+    .estiloLogo {
+        font-size: 2.5rem;
+    }
+
+    .contenedor-producto {
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: -40px;
+        scale: 0.75;
+    }
+
+    .contenedorDivHeaderMenu {
+        top: -20px;
+
+    }
+
+    .btn-sm {
+        font-size: 0.5rem;
+    }
+
+    .contenedorHeader {
+        height: 80px;
+    }
+
+    .contenedorArticulos {
+        grid-template-columns: repeat(2, 1fr);
+        height: 60vh;
+    }
+
+    /*_________________________ Ajustes de la page de Registro PHP _______________________*/
+    .contenedor-php {
+        flex-direction: row;
+
+    }
+
+    .contenedor-direccion-php {
+        padding: 5px;
+        margin: 5px;
+        flex-direction: column;
+    }
+
+    .contenedor-identificatorio-php {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+        border: 3px solid black;
+
+    }
+
+    .contenedor-adicional-php {
+        flex-direction: column;
+    }
+}
