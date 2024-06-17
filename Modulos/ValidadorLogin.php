@@ -5,7 +5,7 @@ include './conexion.php';
 $u=$_POST['usuario'];
 $p=md5($_POST['clave']);
 
-$sql = "select * from leo_modas where correo ='".$u."' and clave='".$p."' and activo='1'";
+$sql = "select * from usuario where correo ='".$u."' and clave='".$p."' and activo='1'";
 $result = mysqli_query($conexion, $sql);
 $rstlogin = mysqli_fetch_array($result);
 
@@ -17,9 +17,11 @@ if ($rstlogin){
 			    $_SESSION['Nombre'] = $rstlogin['nombre'];	//$usu->ID;
 			    				
 				$_SESSION['is_logged'] = 1;
-    header ('location: plataformaAdmin.php');
+    header ('location: ../PHP/plataformaAdmin.php');
     exit();
 }else{
-    header('location: ValidadorLogin.php?mensajee=Usuario o Password Incorrectos');
+   
+    header('location: ../PHP/index.php?mensaje=Usuario o password incorrecto');
+
 }
   ?>  

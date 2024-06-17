@@ -25,7 +25,7 @@
 
     <main class="contenedor-php">
         <div>
-           <form action="ValoidadorLogin.php" method="post"  enctype="multipart/form-data" name="form"> 
+           <form action="../Modulos/ValidadorLogin.php" method="post"  enctype="multipart/form-data" name="form"> 
                 
                 <div class="contenedor-input-php">
                     <label for="usuario">USUARIO</label><br>
@@ -36,9 +36,7 @@
                     <label for="clave">PASSWORD</label><br>
                     <input type="password"  name ="clave" require>
                 </div>
-              <!-- // <?php
-                //echo md5('CarrFran');
-                //?>-->
+             
                 <div>
                     <button type="sunmit" id="btn-Ingresar" class="btn-ingresar-php">Ingresar</button>
                 </div>

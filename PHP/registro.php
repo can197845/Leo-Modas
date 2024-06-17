@@ -1,3 +1,7 @@
+<?php 
+include '../Modulos/conexion.php';
+include '../Modulos/secionAct.php';
+?>
 <?php require('./layout/head.php')?>
 <body>
 <?php require('./layout/header.php') ?>
@@ -6,7 +10,7 @@
         <div class="container contenedor-formulario-php">
             <!-- Formularios de registro de usuarios  -->
              
-            <form action="" method="post" enctype="multipart/form-data" name="form">
+            <form action="../Modulos/alta.php" method="post" enctype="multipart/form-data" name="form">
                 <div class="datos-filiatorios-php">
                 
                 <legend>Ddatos Fiiatorios</legend>
