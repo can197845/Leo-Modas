@@ -1,30 +1,37 @@
-<?php require('./layout/head.php')?>
+<?php require('head.php')?>
 <body>
-    <?php require('./layout/header.php')?>
-    <div class="continer">
-        <form action="" method="post">
+    <?php require('header.php')?>
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data" name="form">
 
             <div class="contenedor-articulos-php">
                 <div>
                     <h4>Categoria</h4>
                     <select name="categoria" id="categoria">
-                    <option value="Pantalon">Pantalon</option>
-                    <option value="Remeras">Remeras</option>
-                    <option value="Blusas">Blusas</option>
-                    <option value="Pulovers">Pulovers</option>
-                    <option value="Camperas">Camperas</option>
-                </div><br>
-            
+                        <option value="Pantalon">Pantalon</option>
+                        <option value="Remeras">Remeras</option>
+                        <option value="Blusas">Blusas</option>
+                        <option value="Pulovers">Pulovers</option>
+                        <option value="Camperas">Camperas</option>
+                </div>
                 <div class="contenedor-nombreArt-php">
                     <h4 for="nombreArt">Articulo</h4>
-                    <input type="text" id="nombreArt" name="nombreArt">
+                    <input type="text" id="nombreArt" name="nombreArt" >
                 </div>
 
                 <div class="contenedor-detalleArt-php">
                     <label for="detalleArt">Detalle</label>
                     <textarea id="detalleArt" name="detalleArt"></textarea>
                 </div>               
-                
+                <div>
+                    <h4>Categoria</h4>
+                    <select name="categoria" id="categoria">
+                        <option value="Pantalon">Pantalon</option>
+                        <option value="Remeras">Remeras</option>
+                        <option value="Blusas">Blusas</option>
+                        <option value="Pulovers">Pulovers</option>
+                        <option value="Camperas">Camperas</option>
+                </div>
                 <div>
                     <label for="precioArt">Precio</label>
                     <input type="number" id="precioArt" name="precioArt">
@@ -32,7 +39,7 @@
                 
                 <DIV>
                     <label for="cantArt">Cantidad </label>
-                    <input type="number" id="cantArt" name="cantArt">
+                    <input type="number" id="cantArt" name="cantArt" class="form-floating col-md mb-3">
                 </DIV>
                 
                 <div>

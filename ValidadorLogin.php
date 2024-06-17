@@ -1,6 +1,6 @@
 <?php
 
-include './conexion.php';
+include 'conexion.php';
   
 $u=$_POST['usuario'];
 $p=md5($_POST['clave']);
@@ -17,11 +17,18 @@ if ($rstlogin){
 			    $_SESSION['Nombre'] = $rstlogin['nombre'];	//$usu->ID;
 			    				
 				$_SESSION['is_logged'] = 1;
-    header ('location: ../PHP/plataformaAdmin.php');
+    header ('location: plataformaAdmin.php');
     exit();
+}elseif ($rstlogin['activo'] == '0') {
+    session_name('back');
+				session_start();
+			    $_SESSION['Usuario']   = $rstlogin['usuario'];	
+				$_SESSION['IDUsuario'] = $rstlogin['id'];
+			    $_SESSION['Nombre'] = $rstlogin['nombre'];	//$usu->ID;
+			    				
+				$_SESSION['is_logged'] = 1;
+    header('location: index.html');
 }else{
-   
-    header('location: ../PHP/index.php?mensaje=Usuario o password incorrecto');
+    header('location: index.php?mensaje=Usuario o password incorrecto');}
 
-}
   ?>  

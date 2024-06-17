@@ -6,7 +6,7 @@
         <div class="contenedor-articulo-menu-php">
 
             <div class="articulo-btn-menu-php">
-                <a href="#">Aalta de Articulo</a>
+                <a href="ingresoArticulo.php">Aalta de Articulo</a>
             </div>
             <div class="articulo-btn-menu-php">
                 <a href="#">Eliminar Articulo</a>

@@ -1,6 +1,6 @@
-<?php require('./layout/head.php'); ?>
-<>
-    <?php require('./layout/header.php') ?>
+<?php require('head.php'); ?>
+<body>
+    <?php require('header.php') ?>
 
     <div class="container">
         <div class="contenedor-plataformaAdmin-menu-php">
@@ -9,7 +9,7 @@
                 <a href="./articulo.php">Articulo</a>
             </div>
             <div class="plataformaAdmin-btn-menu-php">
-                <a href="../PHP/">Usuarios</a>
+                <a href="./registro.php">Usuarios</a>
             </div>
             <div class="plataformaAdmin-btn-menu-php">
                 <a href="#">Empresa</a>
@@ -18,7 +18,7 @@
                 <a href="#">Buscar</a>
             </div>
             <div class="plataformaAdmin-btn-menu-php">
-                <a href="../index.html">Salir</a>
+                <a href="index.html">Salir</a>
             </div>
 
         </div>
