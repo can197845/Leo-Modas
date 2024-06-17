@@ -29,12 +29,12 @@
                 
                 <div class="contenedor-input-php">
                     <label for="usuario">USUARIO</label><br>
-                    <input type="email" name="usuario" id="usuario" require>
+                    <input type="email" name="usuario" id="usuario" requerid>
                 </div>
             
                 <div class="contenedor-input-php">
                     <label for="clave">PASSWORD</label><br>
-                    <input type="password"  name ="clave" require>
+                    <input type="password"  name ="clave" requerid>
                 </div>
              
                 <div>

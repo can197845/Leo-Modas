@@ -277,6 +277,28 @@ main div ul li {
     color: var(--colorLetras);
 }
 
+/*____________________ Estilos de page IngresoArticulo.php________________________________*/
+.contenedor-articulos-php {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contenedor-articulos-php div {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.contenedor-detalleArt-php textarea {
+    width: 350px;
+}
+
+.contenedor-articulo-imagenes-php {
+    display: flex;
+    flex-direction: column;
+}
+
 /*____________________ MEDIA QUERI ________________________________*/
 
 @media screen and (max-width: 982px) {

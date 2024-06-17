@@ -9,7 +9,7 @@
                 <a href="./articulo.php">Articulo</a>
             </div>
             <div class="plataformaAdmin-btn-menu-php">
-                <a href="#">Usuarios</a>
+                <a href="../PHP/">Usuarios</a>
             </div>
             <div class="plataformaAdmin-btn-menu-php">
                 <a href="#">Empresa</a>

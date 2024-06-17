@@ -1,6 +1,6 @@
-<?php require('./layout/head.php') ?>
+<?php require('./head.php') ?>
 <body>
-    <?php require('./layout/header.php') ?>
+    <?php require('./header.php') ?>
 
     <div class="container">
         <div class="contenedor-articulo-menu-php">
@@ -18,7 +18,7 @@
                 <a href="#">Buscar Articulo</a>
             </div>
             <div class="articulo-btn-menu-php">
-                <a href="../index.html">Salir</a>
+                <a href="index.html">Salir</a>
             </div>
 
         </div>
