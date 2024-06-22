@@ -1,10 +1,10 @@
 <?php 
-
 session_name('back');
 session_start();
-$_SESSION['Usuario'];	
-$_SESSION['IDUsuario'];
-$_SESSION['Nombre'];
-			    				
-$_SESSION['is_logged'] = 1;
+
+if(isset($_SESSION['Nombre'])){
+    $_SESSION['is_logged'] = 1;
+}else{
+    header('location: index.php');
+}
 ?>

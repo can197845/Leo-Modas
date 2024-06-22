@@ -17,17 +17,11 @@ if ($rstlogin){
 			    $_SESSION['Nombre'] = $rstlogin['nombre'];	//$usu->ID;
 			    				
 				$_SESSION['is_logged'] = 1;
-    header ('location: plataformaAdmin.php');
+	if ($rstlogin['rol'] == '0'){
+		header('Location: index.html');
+		}else{
+    		header ('location: plataformaAdmin.php');}
     exit();
-}elseif ($rstlogin['activo'] == '0') {
-    session_name('back');
-				session_start();
-			    $_SESSION['Usuario']   = $rstlogin['usuario'];	
-				$_SESSION['IDUsuario'] = $rstlogin['id'];
-			    $_SESSION['Nombre'] = $rstlogin['nombre'];	//$usu->ID;
-			    				
-				$_SESSION['is_logged'] = 1;
-    header('location: index.html');
 }else{
     header('location: index.php?mensaje=Usuario o password incorrecto');}
 

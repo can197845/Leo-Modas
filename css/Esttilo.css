@@ -299,6 +299,21 @@ main div ul li {
     flex-direction: column;
 }
 
+.ingresoArticulo-btn-alta-php {
+    width: 300px;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(122, 122, 238);
+    border: 10px solid rgba(0, 0, 255, 0);
+}
+
+.D {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /*____________________ MEDIA QUERI ________________________________*/
 
 @media screen and (max-width: 982px) {
