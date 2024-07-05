@@ -1,10 +1,9 @@
 
-<?php require('secionAct.php')?>
-<?php require('head.php')?>
+<?php 
+require('head.php');?>
 <body>
     <?php require('header.php') ?>
-    <?php require('nameId.php') ?>
-
+   
     <main>
         
         <div class="container contenedor-formulario-php">
@@ -13,13 +12,13 @@
             <form action="alta.php" method="post" enctype="multipart/form-data" name="form">
                 <div class="datos-filiatorios-php">
                 
-                <legend>Datos Fiiatorios</legend>
+                <legend>Datos</legend>
                 
                 <div class="contenedor-foto-perfil-php">
                     <figure>
-                        <img src="/imagenes/jean01.jpeg" alt="Foto de perfil" class="foto-perfil-php">
+                        <img src="./uploads/Perfil_empty.jfif" alt="Foto de perfil" class="foto-perfil-php">
                     </figure>
-                    <figcaption>Nombre Del Usuario</figcaption><br>
+                    <figcaption>Nombre Usuario</figcaption><br>
                     
                     
                     <label for="fotoPerfil">Foto Perfil : </label>
@@ -45,13 +44,16 @@
                 <br>
                 <div class="contenedor-adicional-php">    
                     <label for="dni">Documento</label>
-                    <input type="number" name="dni" id="dni">
+                    <input type="number" name="dni" id="dni" style="width: 100px;">
 
                     <label for="nacimiento">Fecha de nacimiento</label>
                     <input type="date" name="nacimiento" id="id_nacimiento">
-                
-                    <label for="tel">Telefono</label>
-                    <input type="tel" name="tel" id="id-tel">
+
+                    <label for="cod">Cod. Area</label>
+                    <input type="number" name="cod" style="width: 100px;" placeholder ="Ej=2920">
+
+                    <label for="tel">Telefono sin (15)</label>
+                    <input type="tel" name="tel" id="id-tel" style="width: 100px;" placeholder ="Ej= 290039">
                               
                 </div>
 <!-- Formularios direccion postal del usuarios  -->
@@ -59,7 +61,7 @@
                     <div class="contenedor-direccion-php">
                                                 
                         <label for="direccion">Direccion</label>
-                        <input type="text" name="direccion" id="id_direccion"><br>
+                        <input type="text" name="direccion" id="id_direccion" placeholder="Ej= Colon 809"><br>
                 
                         <label for="provincia">Provincia</label>
                         <select name="provincia" id="provincia">
@@ -69,7 +71,7 @@
                         ?>
                         </select>              
                         <label for="cp">Codigo Postal</label>
-                        <input type="number" name="cp" id="id_cp" style="width: 100px;>
+                        <input type="number" name="cp" id="id_cp" style="width: 100px;">
 
                         <label for="localidad">Localidad</label>
                         <input type="text" name="localidad" id="id_localidad">
@@ -79,7 +81,7 @@
                 
                 <div class="container" style="display:flex; justify-content: space-around; ">
                     <button type="submit" class="btn-agregar-php" name="AgregarPhp" id ="idAgregar">Alta</button>
-                    <button class="btn-agregar-php"><a href="plataformaAdmin.php" style="color:black;">Cancelar</a></button>
+                    <button class="btn-agregar-php"><a href="index.html" style="color:black;">Cancelar</a></button>
                 </div>
             </form>
         </div>

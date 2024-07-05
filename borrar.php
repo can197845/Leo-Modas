@@ -1,12 +1,22 @@
 <?php
- //ini_set('display_errors',1);
-include 'conexion.php';
+     include 'conexion.php';
+     $id = $_REQUEST['id_usuario'];
 
- $id=$_REQUEST["id"];
- //$sql="delete from oradores where id='$id'";
- $sql = "update oradores set activo='0' where id='$id'";
- $result=mysqli_query($conexion, $sql);
- 
- echo "Orador Borrado ID= ".$id;
- echo "<a href=index.php>Volver</a>"
- ?>
+     // Preparar y ejecutar la consulta de forma segura
+     $stmt = $conexion->prepare("DELETE FROM `usuario` WHERE id_usuario=?");
+     $stmt->bind_param("i", $id); // "i" indica que el parámetro es un entero
+     $resultado = $stmt->execute();
+    
+    if($resultado){
+        echo "<script language='JavaScript'>
+            alert('Usuario eliminado correctamente de la Base de Datos');
+            location.assign('USER_busqueda.php');
+            </script>";
+        }else{
+            echo "<script language='JavaScript'>
+            alert('Usuario NO SE ELIMINO de la Base de Datos');
+            location.assign('USER_busqueda.php');
+            </script>";
+            }
+     
+?>

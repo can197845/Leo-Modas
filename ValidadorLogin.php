@@ -19,10 +19,11 @@ if ($rstlogin){
 				$_SESSION['is_logged'] = 1;
 	if ($rstlogin['rol'] == '0'){
 		header('Location: index.html');
+		
 		}else{
     		header ('location: plataformaAdmin.php');}
     exit();
 }else{
-    header('location: index.php?mensaje=Usuario o password incorrecto');}
+    header('location: Login.php?mensaje=Usuario o password incorrecto');}
 
   ?>  

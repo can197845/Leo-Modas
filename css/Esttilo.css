@@ -8,6 +8,7 @@
 /* ____________________ ESTILO DEL HEADER_________________________*/
 
 .contenedorHeader {
+    position: static;
     height: 100px;
     background-color: var(--colorHeader);
     color: var(--colorLetras);
@@ -15,6 +16,7 @@
 
 }
 
+/*https://www.youtube.com/watch?v=RiB4mV3VnRY&t=1076s*/
 .estiloLogo {
     text-align: center;
     font-family: Gwendolyn;
@@ -42,7 +44,7 @@
 .contenedorArticulos {
 
     margin-top: 1px;
-    height: 70vh;
+    height: 100%;
     background-color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -345,7 +347,7 @@ main div ul li {
 
     .contenedorArticulos {
         grid-template-columns: repeat(2, 1fr);
-        height: 60vh;
+        height: 100%;
     }
 
     /*_________________________ Ajustes de la page de Registro PHP _______________________*/

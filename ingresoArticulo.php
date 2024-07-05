@@ -7,7 +7,7 @@ require('head.php');?>
     <?php require('nameId.php'); ?>
 
     <div class="container">
-        <form action="" method="post" enctype="multipart/form-data" name="form">
+        <form action="altaArticulo.php" method="post" enctype="multipart/form-data" name="form">
 
             <div class="contenedor-articulos-php">
                <h2>Crear Artículo</h2>
